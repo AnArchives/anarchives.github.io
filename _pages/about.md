@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Engineer [AMAeSI, AMRINA, IITian]</a> specialized in  Aeronautics, Naval Architecture and Subsea Engineering.
+subtitle: <a href='#'>Engineer [AMAeSI, AMRINA, IITian]</a> specialized in Naval Architecture and Subsea Engineering.
 
 profile:
   align: right
