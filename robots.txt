@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://anarchives.github.io/sitemap.xml
