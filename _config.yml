@@ -4,7 +4,7 @@
 
 title: blank # the website title (if blank, full name will be used instead)
 first_name: Anu
-middle_name: S.
+middle_name:  
 last_name: Nair
 contact_note: >
   You can even add a little note about which of these is the best way to reach you.
@@ -175,6 +175,11 @@ exclude:
   - _books/
   - _news/
   - _projects/
+  - _pages/dropdown.md
+  - _pages/profiles.md
+  - _pages/news.md
+  - _pages/repositories.md
+  - _pages/teaching.md
   - bin/
   - CONTRIBUTING.md
   - CUSTOMIZE.md
