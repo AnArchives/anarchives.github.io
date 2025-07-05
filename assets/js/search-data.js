@@ -45,17 +45,6 @@ ninja.data = [{
             window.location.href = "/blog/2021/the-turning-point/";
           
         },
-      },{id: "post-drafting-stage",
-        
-          title: "Drafting Stage",
-        
-        description: "march &amp; april, looking forward to summer",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2015/formatting-and-links/";
-          
-        },
       },{id: "post-ഒരു-കൊച്ചു-മുഖവുര",
         
           title: "ഒരു കൊച്ചു മുഖവുര",
