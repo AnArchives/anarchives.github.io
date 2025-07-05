@@ -23,7 +23,29 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/publications/";
           },
-        },{id: "post-drafting-stage",
+        },{id: "post-പ്രകാശവും-മെഴുകുതിരിയും",
+        
+          title: "പ്രകാശവും മെഴുകുതിരിയും",
+        
+        description: "One of the insights in life",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2021/candle-lights/";
+          
+        },
+      },{id: "post-വഴിത്തിരിവ്",
+        
+          title: "വഴിത്തിരിവ്..",
+        
+        description: "The turning point in life.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2021/the-turning-point/";
+          
+        },
+      },{id: "post-drafting-stage",
         
           title: "Drafting Stage",
         
@@ -32,6 +54,17 @@ ninja.data = [{
         handler: () => {
           
             window.location.href = "/blog/2015/formatting-and-links/";
+          
+        },
+      },{id: "post-ഒരു-കൊച്ചു-മുഖവുര",
+        
+          title: "ഒരു കൊച്ചു മുഖവുര",
+        
+        description: "An introduction",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2012/Introduction/";
           
         },
       },{
