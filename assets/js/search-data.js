@@ -23,7 +23,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/publications/";
           },
-        },{id: "post-പ്രകാശവും-മെഴുകുതിരിയും",
+        },{id: "post-മരചുവട്ടിലെ-ആ-ക്ലാസ്",
+        
+          title: "മരചുവട്ടിലെ ആ ക്ലാസ്…",
+        
+        description: "Open Classroom lessons",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2023/lp-class-01/";
+          
+        },
+      },{id: "post-പ്രകാശവും-മെഴുകുതിരിയും",
         
           title: "പ്രകാശവും മെഴുകുതിരിയും",
         
