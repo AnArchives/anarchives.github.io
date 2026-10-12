@@ -23,34 +23,26 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      # 1. Install pnpm FIRST so the executable exists in PATH
+      - name: Install pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: latest
+
+      # 2. Setup Node.js and tell it to cache pnpm
       - name: Install Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 22
-          cache: 'pnpm' # or 'pnpm' / 'yarn' depending on your package manager
+          cache: 'pnpm'
 
       - name: Install dependencies
-        run: npm ci
+        run: pnpm install --frozen-lockfile
 
       - name: Build Astro site
-        run: npm run build
-        env:
-          # If using base path, make sure Astro knows it during build time
-          # (Optional: Astro usually picks this up from astro.config.mjs)
-          SITE: ${{ steps.pages.outputs.origin }}
+        run: pnpm run build
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./dist
-
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    needs: build
-    runs-on: ubuntu-latest
-    steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
