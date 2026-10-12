@@ -27,7 +27,7 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 22
-          cache: 'npm' # or 'pnpm' / 'yarn' depending on your package manager
+          cache: 'pnpm' # or 'pnpm' / 'yarn' depending on your package manager
 
       - name: Install dependencies
         run: npm ci
